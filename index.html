@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Rater</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ramen Rater 🍜</h1>
+
+    <!-- Ramen Images Display -->
+    <div id="ramen-menu"></div>
+
+    <!-- Ramen Details -->
+    <div id="ramen-detail">
+        <h2 id="ramen-name">Select a Ramen</h2>
+        <p id="ramen-restaurant"></p>
+        <img id="ramen-image" src="" alt="Ramen Image">
+        <p>Rating: <span id="ramen-rating"></span></p>
+        <p>Comment: <span id="ramen-comment"></span></p>
+        <button id="delete-ramen">Delete</button>
+    </div>
+
+    <!-- Form to Add New Ramen -->
+    <h2>Add a New Ramen</h2>
+    <form id="new-ramen-form">
+        <input type="text" id="new-name" placeholder="Ramen Name" required>
+        <input type="text" id="new-restaurant" placeholder="Restaurant" required>
+        <input type="text" id="new-image" placeholder="Image URL" required>
+        <input type="number" id="new-rating" placeholder="Rating (1-5)" min="1" max="5" required>
+        <input type="text" id="new-comment" placeholder="Comment" required>
+        <button type="submit">Add Ramen</button>
+    </form>
+
+    <!-- Form to Edit Rating & Comment -->
+    <h2>Edit Ramen Details</h2>
+    <form id="edit-ramen-form">
+        <input type="number" id="edit-rating" placeholder="New Rating (1-5)" min="1" max="5" required>
+        <input type="text" id="edit-comment" placeholder="New Comment" required>
+        <button type="submit">Update Ramen</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>

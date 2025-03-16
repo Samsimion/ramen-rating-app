@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe5b4;
+}
+
+h1 {
+    color: #d35400;
+}
+
+#ramen-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#ramen-menu img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#ramen-menu img:hover {
+    transform: scale(1.1);
+}
+
+#ramen-detail {
+    margin-top: 20px;
+}
+
+#ramen-detail img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #d35400;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d35400;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a84300;
+}
